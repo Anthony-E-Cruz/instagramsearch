@@ -6,27 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 style="text-align: center;">Ants Instagram Feed Search App</h1>
-  <form id="myForm">
-    <input type="text" id="username">
-    <input type="submit" value="search">
-  </form>
+  <h1 style="text-align: center;">Enclave Feed</h1>
   <div id="instagram-feed-demo" class="instagram_feed"></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="instagramfeed.js"></script>
 <script>
   $(document).ready(function(){
-    $("#myForm").submit(function(e){
-      e.preventDefault()
-
       var username = $("#username").val()
 
       $.instagramFeed({
         'username':"enclaveshop",
         'container' :"#instagram-feed-demo"
       })
-    })
   })
 </script>
 </html>
